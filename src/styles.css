@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+html,
+body,
+#root,
+.app,
+.content {
+  background-color:#e0e0e0;
+  height: 100%;
+  width:100%;
+  font-family: "Poppins, sans-serif;",;
+  margin: 0;
+  padding: 0;
+}
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #e0e0e0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+.row-container{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.tab-nav{
+  background-color: var(--secondary);
+  height: 80px;
+}

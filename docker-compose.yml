@@ -1,0 +1,14 @@
+version: '3'
+services:
+  keycloak:
+    image: jboss/keycloak
+    environment:
+      KEYCLOAK_USER: admin
+      KEYCLOAK_PASSWORD: 7cL9R9a6FOP6
+      DB_VENDOR: h2
+      PROXY_ADDRESS_FORWARDING: "true"
+      KEYCLOAK_FRONTEND_URL: "https://auth.mission4us.com/auth"
+    ports:
+      - 9080:8080
+    volumes:
+      - ./realm-config:/opt/jboss/keycloak/realm-config
